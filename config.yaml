@@ -1,0 +1,3 @@
+directories:
+  raw_data_base: './data/biological_data_pfp' # directory with zip file with train/testdata has been unzipped
+  preprocessed_data: './data/preprocessed'
