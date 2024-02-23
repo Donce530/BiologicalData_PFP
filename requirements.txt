@@ -3,8 +3,9 @@ numpy
 pyyaml
 progressbar
 h5py
-tensorflow[and-cuda]
 seaborn
 matplotlib
 scikit-learn
-itertools
+tensorflow[and-cuda]
+tensorrt
+jupyter

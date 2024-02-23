@@ -20,7 +20,7 @@ def load_config(config_path):
 def main(config_path):
     config = load_config(config_path)
     print(f"Loaded Configuration:{config}")
-    print(f'Splitting data by GO branch')
+    print('Splitting data by GO branch')
     
     if not os.path.exists(config['directories']['preprocessed_data']):
         os.makedirs(config['directories']['preprocessed_data'])
