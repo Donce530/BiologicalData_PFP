@@ -1,0 +1,16 @@
+﻿Model,Ontology,Accuracy,F1Score
+CNN1,Biological Processes,0.969669759,0.446934852
+ResNet1D,Biological Processes,0.972293496,0.1985394
+FNN1,Biological Processes,0.977000296,0.464381305
+FNN2,Biological Processes,0.9762398,0.442575102
+MLP,Biological Processes,0.975209177,0.366345263
+CNN1,Molecular Function,0.975136638,0.474770013
+ResNet1D,Molecular Function,0.969938397,0.236590198
+FNN1,Molecular Function,0.97701627,0.510177016
+FNN2,Molecular Function,0.976459384,0.496216699
+MLP,Molecular Function,0.972885489,0.284471974
+CNN1,Cellular Component,0.979937255,0.457807437
+ResNet1D,Cellular Component,0.977280974,0.303207578
+FNN1,Cellular Component,0.981174052,0.497296574
+FNN2,Cellular Component,0.980617821,0.496227891
+MLP,Cellular Component,0.979965508,0.414972172
