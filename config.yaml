@@ -1,3 +1,9 @@
 directories:
   raw_data_base: './data/biological_data_pfp' # directory with zip file with train/testdata has been unzipped
   preprocessed_data: './data/preprocessed'
+  models: './models'
+  prediction_output: './predictions'
+
+use_75_percent_datasets: False
+num_folds: 10
+batch_size: 256
