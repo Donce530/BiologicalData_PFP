@@ -62,4 +62,8 @@ The model training consisted of two parts - short training with 10-fold validati
 - BioDataProject_MLP.ipynb
 - BioDataProject_ResNet1D.ipynb
 
-For the corresponding models. In each notebook, data from the preprocessed pickle files is loaded and corresponding model architectures are tested.
+for the corresponding models. In each notebook, data from the preprocessed pickle files is loaded and corresponding model architectures are tested.
+
+To reproduce the results:
+
+Finally, the best model is loaded into `BD_Final_Project.ipynb` which performs predictions on the test set and outputs the `Predictions.tsv` file for the CAFA evaluator. This notebook also contains the code and computations for graphs and statistics that are used in the final report.
