@@ -2,6 +2,10 @@
 
 Protein function prediction project for Biological Data course in UNIPD. Through this project, we explore the use of various deep learning models, such as CNN, FFNN, MLP and ResNet. Below are the instructions on getting how to train and use the models.
 
+## Generated model predictions:
+
+The submission file for CAFA evaluator is available and provided in the archive `Predictions.zip`. The models used to create these predictions can be found in the directory `./final_models` and the predictions are made using code in the notebook `BD_Final_Project.ipynb`
+
 ## Setting up the environment
 
 After cloning, start in the root directory of the repository
@@ -51,13 +55,9 @@ In order to to use the models defined within this project, the training data has
 
 To create these datasets, we have prepared a script `preprocess_data.py`. All you need to do is run the script like so: `python preprocess_train_data.py`
 
-## Running model predictions
-
-The repository includes the best performing models for each ontology. 
-
 ## Training the models
 
-The model training consisted of two parts - short training with 10-fold validation and then longer training of some specific architectures that look to be performing the best based on the k-fold tests. The k-fold training is done through the notebooks:
+The model training consisted of two parts - short training with 10-fold validation and then longer training of some specific architectures that look to be performing the best based on the k-fold tests. The k-fold cross-valdiation training is done through the notebooks:
 - BioDataProject_CNN.ipynb
 - BioDataProject_FFNN.ipynb
 - BioDataProject_MLP.ipynb
@@ -65,6 +65,8 @@ The model training consisted of two parts - short training with 10-fold validati
 
 for the corresponding models. In each notebook, data from the preprocessed pickle files is loaded and corresponding model architectures are tested.
 
-To reproduce the results:
+After the k-fold cross validation, the best models are picked using the code in `BioDataProject_ModelEval.ipynb` notebook. They get saved in a separate directory, and their architecture is used as a base for the training of the final prediction models. 
 
-Finally, the best model is loaded into `BD_Final_Project.ipynb` which performs predictions on the test set and outputs the `Predictions.tsv` file for the CAFA evaluator. This notebook also contains the code and computations for graphs and statistics that are used in the final report.
+## Running model predictions
+
+Finally, the trained models can be used to create the predictions on the test set. They are loaded into `BD_Final_Project.ipynb` which performs predictions on the test set and outputs the `Predictions.tsv` file for the CAFA evaluator. This file is available in the repository as mentioned abocve. The notebook also contains the code and computations for graphs and statistics that are used in the final report.
